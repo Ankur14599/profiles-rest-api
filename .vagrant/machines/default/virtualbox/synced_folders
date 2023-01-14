@@ -1,0 +1,1 @@
+{"rsync":{},"virtualbox":{"/vagrant":{"type":"virtualbox","rsync__exclude":".git/","guestpath":"/vagrant","hostpath":"D:/api_test/profiles-rest-api","disabled":false,"__vagrantfile":true}}}
