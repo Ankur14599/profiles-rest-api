@@ -14,7 +14,7 @@ class UserProfileManager(BaseUserManager):
         user = self.model(email=email, name=name)
 
         user.set_password(password)
-        user.save(self._db) #self._db used to support multiple databases.
+        user.save(using=self._db) #self._db used to support multiple databases.
 
         return user
 
@@ -25,7 +25,7 @@ class UserProfileManager(BaseUserManager):
 
         user.is_superuser = True
         user.is_staff = True
-        user.save(self._db)
+        user.save(using=self._db)
 
         return user
 
